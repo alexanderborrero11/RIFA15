@@ -101,12 +101,24 @@
 </head>
 <body>
     <h1>Producto a comprar</h1>
-    <p>Descripción del producto: RIFA VIRTUAL</p>
-    <p>Precio: $2.000</p>
+    <p>Descripción del producto: Lorem ipsum dolor sit amet.</p>
+    <p>Precio: $100.00</p>
 
     <!-- Botón de Pago de Wonpi -->
-    <!-- Reemplaza https://checkout.wompi.co/l/test_rCMY8r' con el código proporcionado por Wonpi -->
+    <!-- Reemplaza 'TU_CODIGO_HTML_DE_WONPI' con el código proporcionado por Wonpi -->
     <form action="https://wonpi.com/tu_paso_de_pago" method="POST">
+        <input type="hidden" name="order_id" value="TU_ID_DE_ORDEN">
+        <input type="hidden" name="amount" value="100.00">
+        <input type="hidden" name="currency" value="USD">
+        <input type="hidden" name="description" value="Descripción del producto">
+        <!-- Agrega otros campos ocultos requeridos por Wonpi según sus especificaciones -->
+        <input type="submit" value="Pagar con Wonpi">
+    </form>
+
+    <p>Después de hacer clic en el botón de pago, serás redirigido a la página de pago de Wonpi para completar la transacción.</p>
+</body>
+</html>
+
         <input type="hidden" name="order_id" value="TU_ID_DE_ORDEN">
         <input type="hidden" name="amount" value="2000">
         <input type="hidden" name="currency" value="COP">
